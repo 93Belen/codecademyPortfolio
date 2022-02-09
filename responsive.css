@@ -1,0 +1,263 @@
+@media screen and (max-width: 500px) {
+
+    /*HOME*/
+
+
+    body{
+        text-align: center;
+        padding-top: 10vw;
+        overflow-y:scroll
+    }
+    h1{
+        font-size: 12vw;
+        line-height: 15vw;  
+    }
+    h2{
+        font-size: 9vw;
+        line-height: 10w;
+        left: 17vw;
+    }
+    h3{
+        font-size: 7vw;
+        line-height: 25vw;
+        left: 25vw;
+    }
+    
+    #responsive-index-logo{
+        visibility: visible;
+        height: 100vh;
+        width: 90vw;
+        left: -65vw;
+        top: -30vw;
+    }
+
+
+    /*PORTFOLIO*/
+
+    #portfolio{
+        height: 90vh;
+        width: 100vw;
+        left: -1.9vw;
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows: repeat(6, 15vh);
+        row-gap: 35vw;
+        top: -30vw;
+    }
+    video{
+        position: relative;
+        z-index: 7;
+        height: 55vw;
+        width: 97vw;
+        border-radius: 3vw;
+    }
+    #first-arrow{
+        visibility: hidden;
+        height: 7vw;
+        align-self: baseline;
+        justify-self: start;
+    
+    }
+    #last-arrow{
+        visibility: hidden;
+        height: 7vw;
+        margin-top: -2.2vw;
+        margin-left: -7vw;
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+    #business-video{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #sounds-video{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #quizz-video{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #calories-video{
+        grid-row: 4;
+        grid-column: 1;
+    }
+    #eyes-video{
+       grid-row: 5;
+       grid-column: 1;
+    }
+    #robot-video{
+     grid-row: 6;
+     grid-column: 1;
+    }
+    .secondary-h1{
+        color: var(--white);
+        font-size: 7vw;
+        position: relative;
+        top: -13vw;
+        left: 42vw;
+    }
+    #goback{
+        color: var(--background);
+        position: relative;
+        top: -33vw;
+        left: 0vw;
+        font-size: 6vw;
+        width: 30vw;
+        height: 8vw;
+        z-index: 7;
+    }
+    svg{
+        width: 20vw;
+        position: relative;
+        top: -45vw;
+        left: -36vw;
+    }
+    #logo{
+        visibility: hidden;
+    }
+    #pop-up{
+        position: relative;
+        background-color: var(--white);
+        padding: 3vw;
+        flex-direction: column;
+        gap: 0vw;
+        height: 100vh;
+        width: 80vw;
+        left: 1.5vw;
+        top: -120vw;
+        z-index: 7;
+        visibility: hidden;
+    }
+    
+    #pop-up video{
+        width: 86vw;    
+        border-radius: 3vw;
+        height: 48vw;
+        margin-left: -5vw;
+        align-self: center;
+        margin-top: 5vw;
+        left: 2vw;
+    }
+    
+    #pop-up p{
+        font-size: 4.8vw;
+    
+    }
+    #pop-up img{
+        height: 8vw;
+    }
+
+
+    /*RESUME*/
+
+    #resume{
+        color: var(--blue);
+        font-size: 5.5vw;
+        position: relative;
+        left: 0vw;
+        top: -2vw;
+    }
+    #photo-me{
+        opacity: 0.3;
+        height: 40vw;
+        position: absolute;
+        top: 18vw;
+        left: 22vw;
+    }
+
+
+     /*CONTACT*/
+
+    #contact-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        text-align: center;
+        width: 90vw;
+        height: 200vw;
+        position: relative;
+        top: -40vw;
+        left: 2vw;
+    }
+    form h2{
+        font-size: 7vw;
+        line-height: 5.5w;
+        left: 5vw;
+    }
+    input, textarea{
+        margin: 1vw 0;
+        width: 80vw;
+        background-color: var(--white);
+        font-size: 1.5vw;
+        border: none;
+        border-radius: 0.1px;
+        font-size: 7vw;
+    }
+    input{
+        height: 15vw;
+    }
+    textarea{
+        height: 50vw;
+    }
+    button{
+        background-color: var(--green);
+        color: var(--white);
+        font-family: 'Poiret One';
+        width: 35vw;
+        height: 12vw;
+        font-size: 7vw;
+        border-radius: 2vw;
+    }
+    #contact-info{
+        height: 100vw;
+        width: 92vw;
+        position: relative;
+        top: -110vw;
+        left: 0vw;
+        padding: 0;
+        text-align: center;
+    }
+    #contact-info h3{
+        margin-top: 0vw;
+        font-size: 7vw;
+        left: 3vw;
+    }
+    #contact-info p{
+        margin-top: -10vw;
+        margin-left: -0vw;
+        margin-bottom: 0vw;
+        font-size: 5vw;
+    }
+    #linkedin-logo{
+        position: relative;
+        top: -8.5vw;
+        left: 0vw;
+        height: 2.3vw;
+        width: 3vw;
+        margin-top: 0vw;
+        padding-top: 0vw;
+        z-index: 5;
+    }
+    #instagram-logo{
+            position: relative;
+            top: -7vw;
+            left: 0vw;
+            height: 2.5vw;
+            width: 3vw;
+            margin-top: vw;
+            padding-top: 0vw;
+            z-index: 5;
+    }
+    #instagram-logo img{
+        height: 20vw;
+        margin-top: -0vw;
+    }
+    #linkedin-logo img{
+        margin-top: 0vw;
+        height: 21.5vw;
+    }
+    
+}

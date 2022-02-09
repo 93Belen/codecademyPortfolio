@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Syncopate&display=swap');
+
+
+:root {
+    --background:  hsl(23, 31%, 89%);
+    --blue: hsl(205, 10%, 55%);
+    --lightblue: hsl(204, 10%, 72%);
+    --green: hsl(56, 32%, 26%);
+    --white: hsl(23, 31%, 95%);
+    --black: hsl(204, 10%, 10%);
+}
+
+
+
+
+h1{
+    color: var(--white);
+    font-size: 3vw;
+    position: relative;
+    top: 45vw;
+    left: 75vw;
+}
+#goback{
+    color: var(--green);
+    position: relative;
+    top: -9vw;
+    left: 4.7vw;
+    font-size: 2vw;
+    width: 10vw;
+}
+#nav-goback :hover{
+    transform: translate(-1vw);
+    transition: transform 1s;
+}
+svg{
+    width: 5vw;
+    position: relative;
+    top: -11.7vw;
+    left: 2.7vw;
+}
+h2{
+    color: var(--blue);
+    width: 35vw;
+    font-size: 3.8vw;
+    text-align: left;
+    left: 4.5vw;
+}
+form{
+    text-align: center;
+    width: 40vw;
+    position: relative;
+    top: -11vw;
+    left: 10vw;
+}
+input, textarea{
+    margin: 1vw 0;
+    font-family: 'Poiret One';
+    color: var(--green);
+    width: 30vw;
+    background-color: var(--white);
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.1px;
+}
+input{
+    height: 3vw;
+}
+textarea{
+    height: 12vw;
+}
+button{
+    background-color: var(--green);
+    color: var(--white);
+    font-family: 'Poiret One';
+    width: 9.5vw;
+    height: 2.7vw;
+    font-size: 1.8vw;
+}
+#resume{
+    color: var(--blue);
+    font-size: 2vw;
+    position: relative;
+    left: 10vw;
+    top: -7vw;
+}
+#resume span{
+    color: var(--black);
+}
+#logo{
+    position: absolute;
+    top: 7vw;
+    left: 85vw;
+}
+#photo-me{
+    opacity: 0.15;
+    height: 25vw;
+    position: absolute;
+    top: 18vw;
+    left: 50vw;
+}
+#contact-info{
+    height: 20vw;
+    width: 30vw;
+    position: absolute;
+    top: 23vw;
+    left: 60vw;
+    padding: 0;
+    text-align: center;
+}
+#contact-info h3{
+    margin-top: -2vw;
+    font-size: 2vw;
+}
+#contact-info p{
+    margin-top: -5vw;
+    margin-left: -10.5vw;
+    margin-bottom: 0vw;
+}
+#linkedin-logo{
+    position: absolute;
+    top: 13.6vw;
+    left: 5vw;
+    height: 2.3vw;
+    width: 3vw;
+    margin-top: -2vw;
+    padding-top: 0.9vw;
+    z-index: 5;
+}
+#instagram-logo{
+        position: absolute;
+        top: 13.6vw;
+        left: 10vw;
+        height: 2.5vw;
+        width: 3vw;
+        margin-top: -2vw;
+        padding-top: 0.9vw;
+        z-index: 5;
+}
+#instagram-logo img{
+    height: 3.2vw;
+    margin-top: -0.8vw;
+}
+#linkedin-logo img{
+    margin-top: -1.3vw;
+    height: 3.5vw;
+}
+
+#pop-up{
+    position: relative;
+    background-color: var(--white);
+    padding: 5vw;
+    display: flex;
+    gap: 5vw;
+    overflow: hidden;
+    height: 55vh;
+    width: 65vw;
+    left: 8vw;
+    top: -50vw;
+    border-radius: 5vw;
+    opacity: 0.98;
+    backdrop-filter: blur(2px);
+    z-index: 7;
+    visibility: hidden;
+}
+
+#pop-up video{
+    width: 30vw;    
+    border-radius: 3vw;
+    height: 17vw;
+    margin-left: -5vw;
+    align-self: baseline;
+    margin-top: 5vw;
+}
+
+#pop-up p{
+    font-family: 'Poiret One';
+    color: var(--green);
+    font-size: 1.5vw;
+
+}
+
+#pop-up a :hover{
+    transform: rotate(720deg);
+    transition: transform 2s;
+}
+#pop-up img{
+    height: 2vw;
+}

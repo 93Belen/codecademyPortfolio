@@ -1,0 +1,171 @@
+/*
+colors:
+        - Background: hsl(23, 31%, 89%)
+        - Blue: hsl(205, 10%, 55%)
+        - Linght Blue: hsl(204, 10%, 72%)
+        - White: hsl(23, 31%, 95%)
+        - Green: hsl(56, 32%, 26%)
+        - Brown: hsl(23, 34%, 67%)
+        - Black: hsl(204, 10%, 10%)
+                                            *Home*
+
+                                    - h1: Light Blue (Name)
+                                    - h2: Blue (Porfolio)
+                                    - h3: Light Blue (contact, resume)
+                                    - p: White (text)
+
+                                            *Porfolio*
+
+                                    - h1: brown (porfolio)
+                                    - p: Green (go back)
+
+                                            *Contact*
+
+                                    - h1: brown (contact)
+                                    - p: Green (go back, placeholder)
+                                    - h2: Black (send me an email)
+                                    - form background: White
+                                    - form button: Green
+                                    - form button text: White
+
+                                            *Resume*
+
+                                    - h1: brown (resume)
+                                    - p: Green (go back)
+                                    - p: Black (resume text)
+
+
+fonts:
+        - h1, h2, h3: Sycopate
+        - p: Poiret One
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Syncopate&display=swap');
+
+
+:root {
+    --background:  hsl(23, 31%, 89%);
+    --blue: hsl(205, 10%, 55%);
+    --lightblue: hsl(204, 10%, 72%);
+    --green: hsl(56, 32%, 26%);
+    --white: hsl(23, 31%, 95%);
+    --black: hsl(204, 10%, 10%);
+}
+
+/*HOME & BODY common*/
+
+body{
+    background-color: var(--background);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1vw;
+}
+h1, h2, h3 {
+    font-family: Syncopate;
+    z-index: 4;
+    position: relative;
+    width: fit-content;
+}
+p{
+    font-family: 'Poiret One';
+}
+
+h1{
+    color: var(--lightblue);
+    font-size: 7vw;
+    line-height: 7vw;
+
+}
+h2{
+    color: var(--blue);
+    font-size: 4vw;
+    line-height: 5.5w;
+}
+h3{
+    color: var(--lightblue);
+    font-size: 3vw;
+    line-height: 10vw;
+}
+
+#logo{
+    left: 70vw;
+    position: absolute;
+    top: 25vw;
+    font-size: 2vw;
+}
+a{
+    text-decoration: none;
+}
+a :hover{
+    color: var(--blue);
+    transition: color 1.5s;
+}
+#portfolio-nav :hover{
+    color: var(--lightblue);
+    transition: color 1.5s;
+}
+
+/*PORTFOLIO DIV*/
+
+#portfolio{
+    height: 40vw;
+    width: 50vw;
+    position: relative;
+    top: -10vw;
+    left: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: 5vw 15vw 15vw 1vw;
+    row-gap: 2vw;
+    column-gap: 15vw;
+}
+video{
+    position: relative;
+    z-index: 7;
+    height: 15vw;
+    width: 25vw;
+    border-radius: 1vw;
+}
+#first-arrow{
+    grid-column: 1;
+    grid-row: 1;
+    height: 7vw;
+    align-self: baseline;
+    justify-self: start;
+
+}
+#last-arrow{
+    grid-column: 3;
+    grid-row: 4;
+    height: 7vw;
+    margin-top: -2.2vw;
+    margin-left: -7vw;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+#business-video{
+    grid-column: 1;
+    grid-row: 2;
+}
+#sounds-video{
+    grid-column: 2;
+    grid-row: 2;
+}
+#quizz-video{
+    grid-column: 3;
+    grid-row: 2;
+}
+#calories-video{
+    grid-column: 1;
+    grid-row: 3;
+}
+#eyes-video{
+    grid-column: 2;
+    grid-row: 3;
+}
+#robot-video{
+    grid-column: 3;
+    grid-row: 3;
+}
